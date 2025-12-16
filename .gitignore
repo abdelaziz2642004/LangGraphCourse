@@ -39,7 +39,6 @@ dist/
 # Jupyter / IPython
 # -----------------------------
 .ipynb_checkpoints/
-*.ipynb
 profile_default/
 ipython_config.py
 
