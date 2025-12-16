@@ -2,6 +2,10 @@ from typing import Dict, TypedDict # Dictionary, TypedDictionary
 from langgraph.graph import StateGraph # framework that helps you design and manage the flow of tasks (nodes) in your application using graph structure
 from pyexpat.errors import messages
 
+##############################################
+from IPython.display import Image, display
+import tempfile
+import os
 
 
 # we now create an AgentState - shared data structure that keeps track of information as your application run.
@@ -40,8 +44,17 @@ app = graph.compile()
 
 
 
+# from IPython.display import Image, display
 
+# display(Image(app.get_graph().draw_mermaid_png())) 
 
-from IPython.display import Image, display
+# get the PNG bytes from LangGraph
+png_bytes = app.get_graph().draw_mermaid_png()
 
-display(Image(app.get_graph().draw_mermaid_png())) 
+# save to a temporary file
+temp_file = "graph.png"
+with open(temp_file, "wb") as f:
+    f.write(png_bytes)
+
+# open the PNG in the default image viewer (Windows)
+os.startfile(temp_file)
