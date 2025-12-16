@@ -42,6 +42,9 @@ graph.set_finish_point("greater")
 # Compile the graph
 app = graph.compile()
 
+result = app.invoke({"message": "USER :D"})
+print(result)
+
 
 
 # from IPython.display import Image, display
