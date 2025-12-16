@@ -1,0 +1,84 @@
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# -----------------------------
+# Python distribution / packaging
+# -----------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+*.manifest
+*.spec
+
+# -----------------------------
+# IDE / Editor files
+# -----------------------------
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# -----------------------------
+# Jupyter / IPython
+# -----------------------------
+.ipynb_checkpoints/
+*.ipynb
+profile_default/
+ipython_config.py
+
+# -----------------------------
+# OS generated files
+# -----------------------------
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# -----------------------------
+# Logs and temporary files
+# -----------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# -----------------------------
+# LangGraph / AI Agent specific
+# -----------------------------
+# Data files or cache that you might generate
+data/
+outputs/
+cache/
+*.sqlite3
+
+# -----------------------------
+# Others
+# -----------------------------
+*.env
+.env.local
