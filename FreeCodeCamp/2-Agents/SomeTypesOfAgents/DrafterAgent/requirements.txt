@@ -1,0 +1,20 @@
+# core python utils
+python-dotenv
+
+# langchain core
+langchain
+langchain-core
+langchain-community
+langchain_core
+
+# openai integration
+langchain-openai
+openai
+dotenv
+
+# langgraph
+langgraph
+
+# ollama support
+ollama
+langchain-ollama
